@@ -1,0 +1,40 @@
+# Simulink auto-generated files
+slprj/
+*_ert_rtw/
+*.slxc
+*.autosave
+
+# Code Composer Studio
+Debug/
+Release/
+*.out
+*.obj
+*.d
+*.pp
+*.asm
+*.lst
+*.map
+*.sym
+*.cmd~
+*.projectspec~
+.launches/
+.cproject
+.project
+.settings/
+
+# Build artifacts
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# MATLAB temporary
+*.asv
