@@ -1,8 +1,3 @@
-یک فایل `README.md` بسیار حرفه‌ای، تمیز و ساختاریافته متناسب با استانداردهای گیت‌هاب برای پروژه شما آماده کرده‌ام. در این فایل، بخش‌های مربوط به قرار دادن اسکرین‌شات‌ها (نمای کلی مدل و خروجی اسکوپ‌ها) به صورت کادرهای مشخص تعبیه شده است.
-
-می‌توانید متن زیر را کپی کرده و در فایل `README.md` مخزن خود قرار دهید:
-
-```markdown
 # TI TMS320F28335 DSP & Simulink Three-Phase Inverter Control
 
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2021a%2B-orange.svg)](https://www.mathworks.com/products/matlab.html)
@@ -36,9 +31,8 @@ The power stage consists of a **Three-Phase Universal Bridge** using **6 IGBTs/D
 ### 🖼️ Simulink Model Overview
 Below is the overall schematic diagram of the 6-pulse IGBT 3-phase inverter in Simulink:
 
-::: Looking for the Model Screenshot? Place your image in the assets folder and link it below :::
-![Simulink Model Overview](assets/simulink_model_overview.png)
-*(Replace this placeholder with your Simulink main window screenshot)*
+<img width="1203" height="798" alt="image" src="https://github.com/user-attachments/assets/07b9ff4b-b42c-45aa-9f28-6c5c8da5243c" />
+
 
 ---
 
@@ -49,9 +43,8 @@ The model simulates transient and steady-state responses of the inverter. Key ou
 ### 🖼️ Scope Outputs
 Below are the measured output waveforms before/after the filter stages:
 
-::: Place your scope results screenshot here :::
-![Inverter Output Waveforms](assets/scope_outputs.png)
-*(Replace this placeholder with the Scope output screenshot showing PWM pulses, $V_{out}$, and $I_{out}$)*
+<img width="1920" height="928" alt="image" src="https://github.com/user-attachments/assets/8b6dfe02-59cb-4f40-bf5f-9f84b03616da" />
+
 
 ---
 
@@ -87,27 +80,6 @@ Below are the measured output waveforms before/after the filter stages:
 
 ---
 
-## 📂 Repository Structure
-
-```directory
-TI-TMS320F28335-Simulink-3Phase-Inverter/
-│
-├── simulation/
-│   └── Simulation_6Pulse_IGBT_Three_Phase.slx    # Main Simulink Model
-│
-├── dsp_firmware/                                 # CCS Project & C-Code
-│   ├── main.c
-│   └── F28335_Inverter_Control.c
-│
-├── assets/                                       # Images and Diagrams
-│   ├── simulink_model_overview.png               # <-- Place your model screenshot here
-│   └── scope_outputs.png                         # <-- Place your scope screenshot here
-│
-├── LICENSE
-└── README.md
-
----
-
 ## 🤝 Contributing
 Contributions are highly welcome! If you find any issues, have suggestions for hardware optimizations, or want to add closed-loop FOC/SVPWM controllers, please open an **Issue** or submit a **Pull Request**.
 
@@ -115,10 +87,3 @@ Contributions are highly welcome! If you find any issues, have suggestions for h
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-### کارهایی که باید برای نهایی‌سازی انجام دهید:
-1. یک پوشه به نام `assets` در ریشه (root) مخزن گیت‌هاب خود بسازید.
-2. از محیط شبیه‌سازی سیمولینک اسکرین‌شات بگیرید و آن را با نام `simulink_model_overview.png` در پوشه `assets` ذخیره کنید.
-3. از نتایج اسکوپ‌ها (نمودارهای ولتاژ و جریان خروجی) اسکرین‌شات بگیرید و آن را با نام `scope_outputs.png` در همان پوشه ذخیره کنید.
-4. این تغییرات را کامیت و پوش کنید تا عکس‌ها به طور خودکار در فایل README نمایش داده شوند.
